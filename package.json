@@ -1,0 +1,15 @@
+{
+    "name": "my-webapp",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node backend/index.js",
+      "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.13.3",
+      "cors": "^2.8.5",
+      "socket.io": "^4.1.2"
+    }
+  }
+  
