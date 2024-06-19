@@ -12,7 +12,7 @@ const io = socketIo(server, { cors: { origin: '*' } });
 app.use(cors());
 app.use(express.json());
 
-const mongoUri = process.env.MONGODB_URI || 'your-default-mongodb-connection-string';
+const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://linuskan:Cami55a44@notetaking.5r4zohi.mongodb.net/?retryWrites=true&w=majority&appName=notetaking';
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const noteSchema = new mongoose.Schema({ content: String });
