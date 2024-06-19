@@ -31,7 +31,7 @@ const Notes = () => {
 
   return (
     <div>
-      <h1>Collaborative Notes</h1>
+      <h1>nononotes</h1>
       <textarea value={note} onChange={(e) => setNote(e.target.value)}></textarea>
       <button onClick={addNote}>Add Note</button>
       <ul>
